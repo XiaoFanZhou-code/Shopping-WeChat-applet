@@ -1,0 +1,4 @@
+<!--pages/cart/cart.wxml-->
+<!-- 选择收货地址 -->
+<!-- 当收货地址不存在，按钮显示的对象也是bool类型也是true -->
+<address_btn binditemChange="handleItemChange" />

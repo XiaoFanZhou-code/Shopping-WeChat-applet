@@ -3,7 +3,7 @@
 #### 通过npm下载代码
 
 ```
-
+git clone https://github.com/XiaoFanZhou-code/Shopping-WeChat-applet.git
 ```
 
 ##### 加入前端技术交流群和关注博主个人技术公众号，有更多干货哦

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="pyg_index">
+  <!-- 搜索框 -->
+    <searchInput/>
+  <!-- 轮播图 -->
+  <goodsSwiper swiperList="{{swiperList}}"/>
+  <!-- 首页导航 -->
+  <cate catesList="{{catesList}}"/>
+  <!-- 楼层 -->
+  <goodsFloor floorList="{{floorList}}"/>
+  
+</view>

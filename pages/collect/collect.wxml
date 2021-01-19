@@ -1,0 +1,23 @@
+<!--pages/collect/collect.wxml-->
+<!-- 收藏页面 -->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange"></Tabs>
+<view class="collect-main">
+	<view class="collect-title">
+		<text class="collect-tips active">全部</text>
+		<text class="collect-tips">正在热卖</text>
+		<text class="collect-tips">即将上线</text>
+	</view>
+	<view class="collect-content">
+		<navigator class="goods-item" wx:for="{{collect}}" url="/pages/goods_details/goods_details?goods_id={{item.goods_id}}">
+			<!-- 左侧 -->
+			<view class="goods-img">
+				<image src="{{item.pics[0].pics_sma_url||'../../assets/collect/collect_null.jpg'}}" mode="widthFix" />
+			</view>
+			<!-- 右侧 -->
+			<view class="goods-info">
+				<view class="good-name">{{item.goods_name}}</view>
+				<view class="good-price">￥{{item.goods_price}}</view>
+			</view>
+		</navigator>
+	</view>
+</view>

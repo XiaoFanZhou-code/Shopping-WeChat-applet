@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "bottom_tool": "../../commpoents/bottom_tool/bottom_tool"
+    },
+    "navigationBarTitleText": "商品详情"
+}

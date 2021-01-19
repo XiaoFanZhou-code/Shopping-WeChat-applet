@@ -1,0 +1,19 @@
+<!--commpoents/bottom_tool/bottom_tool.wxml-->
+<view class="btm_tool" GoodsInfo="{{GoodsInfo}}" data-GoodsInfo="{{GoodsInfo}}">
+	<view class="tool_item">
+		<view class="iconfont icon-kefu"></view>
+		<view>客服</view>
+		<button open-type="contact"></button>
+	</view>
+	<view class="tool_item">
+		<view class="iconfont icon-fenxiang"></view>
+		<view>分享</view>
+		<button open-type="share"></button>
+	</view>
+	<navigator open-type="switchTab" class="tool_item" url="/pages/cart/cart">
+		<view class="iconfont icon-gouwuchekong"></view>
+		<view>购物车</view>
+	</navigator>
+	<view class="tool_item btn_cart" bindtap="handleCartAdd">加入购物车</view>
+	<view class="tool_item btn_buy">立即购买</view>
+</view>

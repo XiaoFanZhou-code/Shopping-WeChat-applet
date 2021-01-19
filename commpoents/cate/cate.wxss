@@ -1,0 +1,11 @@
+/* commpoents/cate/cate.wxss */
+.index_cate {
+  display: flex;
+}
+.navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.index_cate image {
+  width: 100%;
+}

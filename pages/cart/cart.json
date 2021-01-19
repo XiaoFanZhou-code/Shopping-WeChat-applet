@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "address_btn": "../../commpoents/address_btn/address_btn"
+    },
+    "navigationBarTitleText": "购物车"
+}

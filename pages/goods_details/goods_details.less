@@ -1,0 +1,62 @@
+/* pages/goods_details/goods_details.wxss */
+.detail_swiper {
+  .swiper {
+    height: 65vw;
+    // 图片居中显示
+    text-align: center;
+    image {
+      width: 60%;
+    }
+  }
+}
+.goods_price {
+  padding: 15rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+}
+.goods_name_row {
+  border-top: 5rpx solid #dedede;
+  border-bottom: 5rpx solid #dedede;
+  padding: 10rpx 0;
+  display: flex;
+  .goods_name {
+    flex: 5;
+    color: #000000;
+    font-size: 30rpx;
+    padding: 0 10rpx;
+    display: -webkit-box; // 将对象作为弹性伸缩盒子模型显示
+    overflow: hidden; // 超出的文本隐藏
+    -webkit-box-orient: vertical; // 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数
+    -webkit-line-clamp: 2; // 从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+  }
+  .goods_collect {
+    flex: 1;
+    display: flex;
+    // 改变主轴显示方式。为上下显示
+    flex-direction: column;
+    // 水平居中
+    justify-content: center;
+    // 垂直居中
+    align-items: center;
+    border-left: 1rpx solid #000000;
+    .iconfont {
+    }
+    .icon-shoucang1 {
+      color: orange;
+    }
+    .collect_text {
+    }
+  }
+}
+.goods_info {
+  .goods_info_title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: var(--themeColor);
+    padding: 20rpx;
+    border-bottom: 5rpx solid #dedede;
+  }
+  .goods_info_content {
+  }
+}

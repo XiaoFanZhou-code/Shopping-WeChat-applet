@@ -1,0 +1,25 @@
+/* commpoents/Tabs/Tabs.wxss */
+
+.tabs {}
+
+.tabs_title {
+    display: flex;
+    /* 上下15rpx 左右0*/
+    padding: 15rpx 0;
+}
+
+.title_item {
+    display: flex;
+    flex: 1;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+}
+
+.active {
+    color: var(--themeColor);
+    border-bottom: 5rpx solid currentColor;
+}
+
+.tabs_content {}

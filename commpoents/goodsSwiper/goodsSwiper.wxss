@@ -1,0 +1,8 @@
+/* commpoents/goodsSwiper/goodsSwiper.wxss */
+.swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.index_swiper .swiper_image {
+  width: 100%;
+}

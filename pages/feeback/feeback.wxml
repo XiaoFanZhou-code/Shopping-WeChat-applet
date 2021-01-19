@@ -1,0 +1,28 @@
+<!--pages/feeback/feeback.wxml-->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+	<view class="fb_main">
+		<view class="fb_titles">问题种类</view>
+		<view class="fb_tips">
+			<text>功能建议</text>
+			<text>购买遇到问题</text>
+			<text>性能问题</text>
+			<text>其他</text>
+		</view>
+		<view class="fb_content">
+			<textarea placeholder="请描述您的问题！" value="{{textVal}}" bindinput="handleTextInput"></textarea>
+			<view class="fb_tool">
+				<button bindtap="handleChooseImg">+</button>
+				<view class="up_img_item" wx:for="{{chooseImags}}" wx:key="*this" bindtap="handelRemoveImg" data-index="{{index}}">
+					<Uplmg src="{{item}}"></Uplmg>
+				</view>
+			</view>
+		</view>
+		<view class="form_btn_wrap">
+			<button type="warn" bindtap="handleFormSubmit">
+				<icon type="success_no_circle" size="23">
+				</icon>
+				提交
+			</button>
+		</view>
+	</view>
+</Tabs>

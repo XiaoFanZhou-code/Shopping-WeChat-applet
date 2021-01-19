@@ -1,0 +1,10 @@
+<!--commpoents/goodsSwiper/goodsSwiper.wxml-->
+<view class="index_swiper">
+	<swiper class="swiper" autoplay indicator-dots circular>
+		<swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+			<navigator url="/pages/goods_details/goods_details?goods_id={{item.goods_id}}">
+				<image src="{{item.image_src}}" mode="widthFix" class="swiper_image"></image>
+			</navigator>
+		</swiper-item>
+	</swiper>
+</view>

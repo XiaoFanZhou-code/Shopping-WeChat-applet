@@ -1,0 +1,59 @@
+/* commpoents/bottom_tool/bottom_tool.wxss */
+/* 引入图标库wxss文件 */
+
+@import "../../styles/iconfont.wxss";
+
+page {
+  padding-bottom: 90rpx;
+}
+.btm_tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1rpx solid #cccccc;
+  .tool_item {
+    flex: 1;
+    display: flex;
+    // 改变主轴显示方式：上下显示
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    position: relative;
+    button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      // 透明度
+      opacity: 0;
+    }
+  }
+  .btn_cart {
+    flex: 2;
+    display: flex;
+    // 改变主轴显示方式：上下显示
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa500;
+    font-size: 30rpx;
+    font-weight: 600;
+  }
+  .btn_buy {
+    flex: 2;
+    display: flex;
+    // 改变主轴显示方式：上下显示
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb4450;
+    font-size: 30rpx;
+    font-weight: 600;
+  }
+}

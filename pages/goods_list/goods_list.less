@@ -1,0 +1,33 @@
+/* pages/goods_list/goods_list.wxss */
+.first_tab {
+  .goods_item {
+    display: flex;
+    border-bottom: 1rpx solid #ccc;
+    .goods_img_wrap {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      image {
+        width: 70%;
+      }
+    }
+    .goods_info_wrap {
+      flex: 3;
+      display: flex;
+      // 改变主轴显示的方式
+      flex-direction: column;
+      justify-content: space-evenly;
+      .goods_name {
+        display: -webkit-box; // 将对象作为弹性伸缩盒子模型显示
+        overflow: hidden; // 超出的文本隐藏
+        -webkit-box-orient: vertical; // 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数
+        -webkit-line-clamp: 2; // 从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+      }
+      .goods_price {
+        color: var(--themeColor);
+        font-size: 32rpx;
+      }
+    }
+  }
+}

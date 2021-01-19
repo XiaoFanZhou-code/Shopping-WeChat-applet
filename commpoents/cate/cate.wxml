@@ -1,0 +1,6 @@
+<!--commpoents/cate/cate.wxml-->
+<view class="index_cate">
+	<navigator wx:for="{{catesList}}" wx:key="{{name}}" class="navigator" url="/pages/category/category" open-type="switchTab">
+		<image src="{{item.image_src}}" mode="widthFix"></image>
+	</navigator>
+</view>

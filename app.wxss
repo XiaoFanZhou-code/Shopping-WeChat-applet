@@ -1,0 +1,41 @@
+/**app.wxss**/
+
+
+/* 引入全局图标库wxss文件 */
+
+@import "./styles/iconfont.wxss";
+
+/* 在微信小程序中不支持'*' */
+
+
+/* 样式初始化 */
+
+page,
+view,
+swiper,
+swiper-item,
+image,
+navigator,
+text {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+  主题颜色 ,通过变量来实现
+  1 less中存在变量
+  2 原生的css和wxss也是支持变量的
+  */
+
+page {
+    /* 定义主题颜色 */
+    --themeColor: #19caad;
+    /* 统一字体颜色 */
+    font-size: 28rpx;
+}
+
+image {
+    width: 100%;
+}
