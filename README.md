@@ -1,6 +1,6 @@
 ### 购物街小程序
 
-#### 通过npm下载代码
+#### 通过Git下载代码
 
 ```
 git clone https://github.com/XiaoFanZhou-code/Shopping-WeChat-applet.git
@@ -41,3 +41,5 @@ git clone https://github.com/XiaoFanZhou-code/Shopping-WeChat-applet.git
 ##### 个人中心
 
 ![](https://nanxuan2020.oss-cn-hangzhou.aliyuncs.com/Snipaste_2021-01-19_11-21-26.png)
+
+![image](https://note.youdao.com/yws/api/personal/file/60B33D91711A43FE959F7F28A9659F76?method=download&shareKey=b5d766a5244fdfa627bdf499b137bed4)
